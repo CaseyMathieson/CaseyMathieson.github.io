@@ -3,23 +3,227 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Casey Mathieson — Systems Engineer.">
-  <title>Casey Mathieson | Systems Engineer</title>
+  <meta name="description" content="Casey Mathieson — electro-mechanical systems engineer specializing in automation, precision manufacturing, and metrology.">
+  <meta name="theme-color" content="#0f2135">
+  <title>Casey Mathieson | Electro-Mechanical Systems Engineer</title>
   <style>
-    :root { color-scheme: light dark; }
-    body { margin: 0; font: 1.1rem/1.6 system-ui, sans-serif; }
-    main { box-sizing: border-box; max-width: 46rem; min-height: 100vh; margin: auto; padding: 12vh 1.5rem; }
-    h1 { font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1; margin: .25rem 0 1rem; }
-    .role { color: #4b75ff; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    a { color: inherit; text-underline-offset: .2em; }
+    :root {
+      --ink: #152334;
+      --muted: #59687a;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --rule: #d7e0e8;
+      --accent: #0d6d88;
+      --accent-pale: #e5f3f7;
+      --navy: #0f2135;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--canvas);
+      font: 16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: .18em; }
+    a:hover { color: var(--accent); }
+    .wrap { width: min(100% - 2rem, 72rem); margin: 0 auto; }
+    header {
+      color: white;
+      background: linear-gradient(125deg, var(--navy), #164461);
+      border-bottom: 5px solid var(--accent);
+      padding: 3.8rem 0 3.2rem;
+    }
+    .eyebrow {
+      margin: 0 0 .7rem;
+      color: #8ee1f0;
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0; font-size: clamp(2.25rem, 6vw, 4.25rem); line-height: 1; letter-spacing: -.045em; }
+    .target { margin: 1.15rem 0 1.5rem; color: #e4f0f4; font-size: clamp(1rem, 2vw, 1.28rem); font-weight: 650; }
+    .contact { display: flex; flex-wrap: wrap; gap: .3rem .95rem; color: #f6fbfd; }
+    .contact span::after { content: "·"; margin-left: .95rem; color: #8ee1f0; }
+    .contact span:last-child::after { content: ""; margin: 0; }
+    main { margin: 2rem auto 3.5rem; }
+    .summary {
+      margin-bottom: 1.6rem;
+      padding: 1.25rem 1.4rem;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-pale);
+      font-size: 1.05rem;
+    }
+    section { margin-top: 2.25rem; }
+    h2 {
+      margin: 0 0 .9rem;
+      padding-bottom: .45rem;
+      border-bottom: 1px solid var(--rule);
+      color: var(--navy);
+      font-size: 1.15rem;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+    h3 { margin: 0; color: var(--navy); font-size: 1.18rem; line-height: 1.25; }
+    .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem 1.4rem; }
+    .skills p { margin: 0; }
+    .skills strong { color: var(--navy); }
+    .job { padding: 1.65rem 0; border-bottom: 1px solid var(--rule); }
+    .job:first-of-type { padding-top: .25rem; }
+    .job-head { display: grid; grid-template-columns: 1fr auto; gap: .75rem 1.25rem; align-items: baseline; }
+    .job-meta { color: var(--muted); font-size: .95rem; text-align: right; }
+    .role { margin: .28rem 0 0; color: var(--accent); font-weight: 720; }
+    .role + .role { margin-top: .08rem; }
+    ul { margin: .9rem 0 0; padding-left: 1.2rem; }
+    li + li { margin-top: .38rem; }
+    .credentials { display: grid; gap: .75rem; }
+    .credential { padding: .9rem 1rem; border: 1px solid var(--rule); border-radius: .4rem; background: var(--paper); }
+    .credential strong { color: var(--navy); }
+    footer { padding: 1.8rem 0 2.5rem; color: var(--muted); font-size: .88rem; text-align: center; }
+    @media (max-width: 640px) {
+      header { padding: 2.75rem 0 2.4rem; }
+      .skills { grid-template-columns: 1fr; }
+      .job-head { grid-template-columns: 1fr; gap: .2rem; }
+      .job-meta { text-align: left; }
+      .contact span::after { content: ""; margin: 0; }
+      .contact { display: grid; gap: .25rem; }
+    }
+    @media print {
+      @page { margin: .55in; }
+      body { background: white; font-size: 10.5pt; }
+      .wrap { width: 100%; }
+      header { padding: 0 0 .25in; color: var(--ink); background: white; border-bottom: 2px solid var(--accent); }
+      .eyebrow, .target, .contact { color: var(--ink); }
+      main { margin: .2in auto; }
+      section { margin-top: .18in; }
+      .summary { margin-bottom: .16in; padding: .1in .13in; background: white; }
+      .job { padding: .12in 0; break-inside: avoid; }
+      li + li { margin-top: .02in; }
+      footer { display: none; }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <p class="role">Systems Engineer</p>
-    <h1>Casey Mathieson</h1>
-    <p>A professional résumé and portfolio site is in progress.</p>
-    <p><a href="https://github.com/absurdly-nerdly">GitHub</a></p>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Engineering résumé</p>
+      <h1>Casey Mathieson</h1>
+      <p class="target">Electro-Mechanical Systems · Automation · Precision Manufacturing</p>
+      <div class="contact" aria-label="Contact details">
+        <span>Oregon City, OR</span>
+        <span><a href="tel:+15034765112">503-476-5112</a></span>
+        <span><a href="mailto:caseymathieson@gmail.com">caseymathieson@gmail.com</a></span>
+        <span><a href="https://www.linkedin.com/in/caseymathieson/">linkedin.com/in/caseymathieson</a></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="summary">Electro-mechanical systems engineer with 11+ years of experience designing, building, commissioning, and improving automation equipment, manufacturing processes, and precision-metrology systems. Brings end-to-end ownership from root-cause analysis and concept development through mechanical/electrical design, fabrication, test, deployment, and durable process documentation. Combines hands-on manufacturing knowledge with strong mechanical design, controls, calibration, and cross-functional delivery skills.</p>
+
+    <section aria-labelledby="expertise">
+      <h2 id="expertise">Technical expertise</h2>
+      <div class="skills">
+        <p><strong>Engineering systems &amp; automation:</strong> precision metrology, laser calibration, sensors, thermal control, motion systems, process development, root-cause analysis, PFMEA, FAT/SAT, DFM</p>
+        <p><strong>Mechanical &amp; manufacturing:</strong> SolidWorks (CSWP), PDM, complex assemblies, GD&amp;T, FEA/simulation, fixture and nest design, CNC machining, CAM/G-code, welding, sheet metal, waterjet, 3D printing</p>
+        <p><strong>Electrical &amp; controls:</strong> electrical schematics, AC/DC systems, PLCs, six-axis robots, pneumatics, NFPA/NEC/NEMA-informed design</p>
+        <p><strong>Programming &amp; data:</strong> Python automation, MATLAB modification/UI development, XML processing, technical documentation</p>
+        <p><strong>Delivery &amp; leadership:</strong> proposals and estimates, cross-functional coordination, project/team leadership, process improvement</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 id="experience">Professional experience</h2>
+
+      <article class="job">
+        <div class="job-head"><h3>ZeroTouch Metrology / DWFritz Automation — Wilsonville, OR</h3></div>
+        <p class="role">Systems Engineer, ZeroTouch Segment <span class="job-meta">| 2024–Present</span></p>
+        <p class="role">Mechanical Engineer <span class="job-meta">| 2020–2024</span></p>
+        <ul>
+          <li>Lead process-improvement work across buildup, commissioning, deployment, and support for precision-machine systems.</li>
+          <li>Lead R&amp;D, test-method development, calibration, and product-improvement investigations for precision-metrology hardware, including rotary-stage reliability analysis and validation of improved test and fixturing approaches.</li>
+          <li>Perform full commissioning from machine buildup through on-site installation and testing, including hands-on mechanical, electrical/electronic, and software debugging, diagnosis, root-cause analysis, and problem solving.</li>
+          <li>Write and improve SOPs; estimate standard-procedure effort; map risks and dependencies; and resolve repeat issues in build and deployment processes.</li>
+          <li>Support customers on site and remotely, communicating with operator- and management-level stakeholders while coordinating solutions across departments.</li>
+          <li>Develop new procedures and automate or semi-automate recurring tasks to improve repeatability and reduce repeated effort.</li>
+          <li>Developed AI-enabled engineering workflow tools that accelerate SOP development, knowledge retrieval, troubleshooting, and repeatable commissioning/support tasks.</li>
+        </ul>
+        <p class="role">Mechanical Engineer highlights</p>
+        <ul>
+          <li>Completed a major overhaul of a legacy AutoCAD electronics-assembly machine design, including CAD, BOM, and associated documentation.</li>
+          <li>Designed mechanical solutions for conveyance, packaging, part handling, and robotic end-of-arm tooling.</li>
+          <li>Improved system-build checklists, records, and IAT templates; closed repeatability, documentation, and quality-assurance gaps during precision-machine builds.</li>
+          <li>Developed a sensor- and dewpoint-based thermal-control algorithm that prevents condensation damage, calculates safe operating limits, and enables alarm/control responses.</li>
+          <li>Designed precision fixtures, nests, and adjustment stages for metrology equipment; developed a CAD shadowing-preview method that reduced reliance on lengthy machine simulations.</li>
+          <li>Validated a high-precision laser bench and improved calibration, materials/finish selection, optical settings, risk-management, DFM, BOM/CAD, and technician-ready documentation practices.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>Evergreen Advancements / Cascadia Digital — Oregon</h3><span class="job-meta">2023–Present</span></div>
+        <p class="role">Founder / Operator</p>
+        <ul>
+          <li>Build and operate a digital-product e-commerce business, including product research, SEO, and marketplace operations.</li>
+          <li>Developed a Python-supported listing workflow, applying automation and process-design skills to improve repeatability at scale.</li>
+          <li>Built AI-assisted research, operations, and custom productivity tooling to automate repeatable product-development, marketplace, and storefront workflows.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>Sig Sauer Electro-Optics — Wilsonville, OR</h3><span class="job-meta">Oct 2019–Feb 2020</span></div>
+        <p class="role">Manufacturing Engineer</p>
+        <ul>
+          <li>Designed, improved, and integrated automated equipment and tooling for optical-electronics assembly.</li>
+          <li>Diagnosed manufacturing-process and equipment issues, delivered immediate downtime-reduction fixes, and implemented robust long-term solutions for high-volume automation.</li>
+          <li>Programmed six-axis robots and PLC changes for process improvements; partnered with product design, project management, and manufacturing to improve reliability, throughput, and safety.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>Production Robotics Inc. — San Leandro, CA</h3><span class="job-meta">May 2015–Jul 2019</span></div>
+        <p class="role">Senior Automation Engineer <span class="job-meta">| Nov 2016–Jul 2019</span></p>
+        <p class="role">Mechanical Design Engineer <span class="job-meta">| May 2015–Nov 2016</span></p>
+        <ul>
+          <li>Designed and managed custom automation equipment for manufacturing and assembly programs ranging from $30K to $1.5M.</li>
+          <li>Led engineers, technicians, and support staff across simultaneous projects; performed design reviews, PFMEAs, FAT/SAT, and high-risk prototype/process testing.</li>
+          <li>Developed proposals, cost and schedule estimates, labor/expenditure tracking, and practical delivery plans.</li>
+          <li>Designed complex mechanical assemblies and electrical systems, including schematics aligned with NFPA, NEC, and NEMA requirements.</li>
+          <li>Delivered solutions spanning robotic assembly cells, material-handling/gantry systems, medical-device manufacturing equipment, and autonomous-vehicle R&amp;D.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>West Coast Surgical LLC — Half Moon Bay, CA</h3><span class="job-meta">Oct 2014–May 2015</span></div>
+        <p class="role">CNC Machinist</p>
+        <ul>
+          <li>Produced high-mix, low-volume medical-device work in an ISO-certified environment; set up vertical mills, tooling, fixtures, and offsets.</li>
+          <li>Optimized G-code and machine setups to meet tolerance requirements; designed and fabricated fixtures for difficult workholding.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>Shaffer's Offroad — Alameda, CA</h3><span class="job-meta">Jun 2014–Oct 2014</span></div>
+        <p class="role">CAD Designer / Fabricator</p>
+        <ul><li>Designed and manufactured custom vehicle components using SolidWorks, CNC plasma, press-brake, milling, and MIG-welding processes.</li></ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><h3>NASA Ames Research Center — Moffett Field, CA</h3><span class="job-meta">Jun 2013–Oct 2014</span></div>
+        <p class="role">Engineering Intern, Volunteer</p>
+        <ul><li>Contributed to R&amp;D for a cable-actuated tensegrity rolling robot and led an SFSU senior-project team that prototyped a modular motorized cable-actuation system.</li></ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education &amp; credentials</h2>
+      <div class="credentials">
+        <div class="credential"><strong>B.S., Mechanical Engineering, Mechatronics Focus</strong> — San Francisco State University | 2015</div>
+        <div class="credential"><strong>A.A., Economics; A.A., Marketing, Graphic Design Focus</strong> — Santa Barbara City College | 2011</div>
+        <div class="credential"><strong>Certified SOLIDWORKS Professional — Mechanical Design</strong> | Certificate C-QNHPJK9BLV | 2019</div>
+      </div>
+    </section>
   </main>
+  <footer>© Casey Mathieson</footer>
 </body>
 </html>
