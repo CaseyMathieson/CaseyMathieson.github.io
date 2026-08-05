@@ -138,7 +138,6 @@
     .skill-card { min-height: 10.3rem; padding: 1rem 1.05rem; background: var(--bg-secondary); }
     .skill-card p { margin: 0; color: var(--text-secondary); font-size: .92rem; }
     .skill-card strong { display: block; margin-bottom: .55rem; color: var(--text-primary); font-size: .86rem; }
-    .skill-card:last-child { grid-column: span 2; }
     .experience-grid { display: grid; gap: .85rem; }
     .job-card { padding: 1.2rem 1.25rem 1.25rem; }
     .job-card.featured { border-color: var(--accent-cyan-border); }
@@ -169,7 +168,6 @@
       .topbar-meta { display: none; }
       .hero { margin-top: .75rem; padding: 1.2rem; }
       .hub-grid { grid-template-columns: 1fr; }
-      .skill-card:last-child { grid-column: auto; }
       .section-heading { align-items: start; flex-direction: column; gap: .25rem; }
       .section-note { text-align: left; }
       .job-head { flex-direction: column; gap: .25rem; }
@@ -234,11 +232,12 @@
         <section id="expertise" aria-labelledby="expertise-title">
           <div class="section-heading"><div><p class="section-kicker">Capability map</p><h2 id="expertise-title">Technical expertise</h2></div><p class="section-note">Systems → build → validation → support</p></div>
           <div class="hub-grid">
-            <article class="skill-card"><strong>Engineering systems &amp; automation</strong><p>Precision metrology, laser calibration, sensors, thermal control, motion systems, process development, root-cause analysis, PFMEA, FAT/SAT, DFM</p></article>
-            <article class="skill-card"><strong>Mechanical &amp; manufacturing</strong><p>SolidWorks (CSWP), PDM, complex assemblies, GD&amp;T, FEA/simulation, fixture and nest design, CNC machining, CAM/G-code, welding, sheet metal, waterjet, 3D printing</p></article>
-            <article class="skill-card"><strong>Electrical, controls &amp; functional safety</strong><p>Ground-up AC/DC electrical-panel design; electrical schematic review and redlines; motor control and VFDs; PLCs; machine-safety system design, programming, and validation; six-axis robots; pneumatics; and NFPA/NEC/NEMA-informed design</p></article>
-            <article class="skill-card"><strong>AI-enabled engineering tooling &amp; data workflows</strong><p>Agent-assisted development and validation of Python, MATLAB, and TypeScript tools; technical research, knowledge retrieval, file discovery, workflow automation, and structured data (CSV, JSON, XML, YAML)</p></article>
-            <article class="skill-card"><strong>Delivery &amp; leadership</strong><p>Proposals and estimates, cross-functional coordination, project/team leadership, process improvement</p></article>
+            <article class="skill-card"><strong>Systems engineering &amp; metrology</strong><p>Precision metrology, laser calibration, sensors/instrumentation, motion and robotic systems, pneumatics, thermal control, test-method development, and root-cause analysis</p></article>
+            <article class="skill-card"><strong>Mechanical design &amp; manufacturing</strong><p>SolidWorks (CSWP), PDM, GD&amp;T, complex assemblies, FEA/simulation, fixtures/nests, DFM/DFA, CNC/CAM/G-code, and fabrication</p></article>
+            <article class="skill-card"><strong>Electrical, controls &amp; functional safety</strong><p>Ground-up AC/DC panel design; schematic review/redlines; motor control/VFDs; PLCs; and machine-safety design, programming, and validation</p></article>
+            <article class="skill-card"><strong>Commissioning, quality &amp; process</strong><p>System commissioning, FAT/SAT, calibration, verification and validation, PFMEA, SOPs/work instructions, risk/dependency mapping, and process improvement</p></article>
+            <article class="skill-card"><strong>AI-enabled engineering tooling &amp; data workflows</strong><p>Agent-assisted tool development and validation; technical research, knowledge/file discovery, workflow automation, Python/MATLAB/TypeScript tools, and structured data</p></article>
+            <article class="skill-card"><strong>Delivery &amp; technical coordination</strong><p>Requirements definition, estimates/proposals, cross-functional coordination, customer and field support, technician-ready documentation, and knowledge transfer</p></article>
           </div>
         </section>
 
