@@ -20,7 +20,6 @@
       --accent-cyan: #7dcfff;
       --accent-cyan-strong: #43c4ff;
       --accent-cyan-bg: rgba(125, 207, 255, .11);
-      --accent-purple: #bb9af7;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -148,16 +147,11 @@
     h3 { margin: 0; color: var(--text-primary); font-size: 1.13rem; line-height: 1.3; }
     .dates { flex: 0 0 auto; margin: .15rem 0 0; color: var(--text-muted); font-size: .72rem; text-align: right; }
     .role { margin: .52rem 0 0; color: var(--accent-cyan); font-size: .78rem; font-weight: 700; letter-spacing: .01em; }
-    .role + .role { margin-top: .12rem; color: var(--accent-purple); }
+    .role + .role { margin-top: .12rem; color: var(--text-secondary); }
     h4 { margin: 1.15rem 0 0; color: var(--text-primary); font-size: .96rem; }
     ul { margin: .85rem 0 0; padding-left: 1.18rem; color: var(--text-secondary); }
     li + li { margin-top: .42rem; }
     li::marker { color: var(--accent-cyan); }
-    .project-link { display: inline-flex; margin-top: .95rem; color: var(--accent-cyan); font-weight: 700; }
-    .project-link:hover, .project-link:focus-visible { text-decoration: underline; outline: none; }
-    .project-list { border-top: 1px solid var(--border); }
-    .project { padding: 1.15rem 0; border-bottom: 1px solid var(--border); }
-    .project p { max-width: 58rem; margin: .45rem 0 0; color: var(--text-secondary); }
     .credentials { border-top: 1px solid var(--border); }
     .credential { padding: 1rem 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
     .credential strong { display: block; margin-bottom: .2rem; color: var(--text-primary); font-size: .94rem; }
@@ -188,12 +182,12 @@
     @media print {
       @page { margin: .48in; }
       body { background: white; color: #111; font-size: 9.5pt; }
-      .resume-rail, .topbar, .project-link { display: none; }
+      .resume-rail, .topbar { display: none; }
       .site-main { padding: 0; background: white; }
       .hero { margin-top: 0; padding: .08in 0 .12in .12in; border-left-color: #0c94b9; }
       h1, h2, h3, h4, .skill-card strong, .credential strong { color: #111; }
-      .target, .role, .project-link { color: #0b6380; }
-      .summary, .skill-card p, .credential, ul, .project p { color: #333; }
+      .target, .role { color: #0b6380; }
+      .summary, .skill-card p, .credential, ul { color: #333; }
       .hub-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .skill-card, .job-card, .credential, .project { padding: .08in .11in; }
       .job-card { break-inside: avoid; }
@@ -256,7 +250,7 @@
               <div class="job-head"><h3>ZeroTouch Metrology / DWFritz Automation — Wilsonville, OR</h3><span class="dates">2020–Present</span></div>
               <p class="role">Systems Engineer, ZeroTouch Segment · 2024–Present</p>
               <ul>
-                <li>Drive process improvement across precision-machine buildup, commissioning, deployment, and support.</li>
+                <li>Drive process improvements across precision-machine buildup, commissioning, deployment, and support.</li>
                 <li>Conduct R&amp;D, calibration, and test-method development for precision-metrology hardware.</li>
                 <li>Commission systems through on-site installation and testing, resolving mechanical, electrical, and software issues.</li>
                 <li>Develop agent-assisted engineering workflow tools for research, SOP development, troubleshooting, and repeatable support tasks, with human review of technical outputs.</li>
@@ -264,10 +258,10 @@
               <h4>Mechanical Engineer · 2020–2024</h4>
               <ul>
                 <li>Modernized legacy machine designs and developed mechanical solutions for conveyance, packaging, part handling, and robotic end-of-arm tooling.</li>
-                <li>Designed precision fixtures, nests, and adjustment stages; improved calibration methods, DFM, CAD/BOM quality, and technician-ready documentation.</li>
+                <li>Designed precision fixtures, nests, and adjustment stages.</li>
+                <li>Improved calibration methods, DFM, CAD/BOM quality, and technician-ready documentation.</li>
                 <li>Developed sensor- and dewpoint-based thermal-control logic to prevent condensation damage and enable safe operating responses.</li>
               </ul>
-              <a class="project-link" href="#projects">View selected project focus ↓</a>
             </article>
 
             <article class="job-card">
@@ -303,7 +297,10 @@
             <article class="job-card">
               <div class="job-head"><h3>West Coast Surgical LLC — Half Moon Bay, CA</h3><span class="dates">Oct 2014–May 2015</span></div>
               <p class="role">CNC Machinist</p>
-              <ul><li>Produced high-mix, low-volume medical-device work; optimized milling setups, G-code, and workholding fixtures to meet tolerance requirements.</li></ul>
+              <ul>
+                <li>Produced high-mix, low-volume medical-device work.</li>
+                <li>Optimized milling setups, G-code, and workholding fixtures to meet tolerance requirements.</li>
+              </ul>
             </article>
 
             <article class="job-card">
@@ -317,15 +314,6 @@
               <p class="role">Engineering Intern, Volunteer</p>
               <ul><li>Contributed to R&amp;D for a cable-actuated tensegrity rolling robot and led a senior-project team that prototyped a modular motorized cable-actuation system.</li></ul>
             </article>
-          </div>
-        </section>
-
-        <section id="projects" aria-labelledby="projects-title">
-          <div class="section-heading"><h2 id="projects-title">Selected project focus</h2></div>
-          <div class="project-list">
-            <article class="project"><h3>Precision-stage reliability</h3><p>Applied structured root-cause analysis and improved test and fixturing approaches to strengthen repeatability in precision-motion hardware.</p></article>
-            <article class="project"><h3>Calibration-system improvement</h3><p>Improved calibration practices, fixtures, documentation, and technician-ready workflows for precision-metrology equipment.</p></article>
-            <article class="project"><h3>Commissioning and process improvement</h3><p>Developed practical procedures, risk/dependency maps, and repeatable support methods across machine buildup, deployment, and customer support.</p></article>
           </div>
         </section>
 
