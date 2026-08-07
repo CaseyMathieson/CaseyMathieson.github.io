@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
-  <title id="title">Documentation migration workflow</title>
-  <desc id="desc">A fictional four-stage flow from inventory to verified release.</desc>
-  <rect width="720" height="360" fill="#0c1012"/>
-  <g fill="none" stroke="#293137" stroke-width="1"><path d="M48 70H672M48 180H672M48 290H672"/><path d="M48 36V324M204 36V324M360 36V324M516 36V324M672 36V324"/></g>
-  <g font-family="Segoe UI, sans-serif"><text x="48" y="54" fill="#7dcfff" font-size="15" font-weight="700" letter-spacing="2">CONTROLLED CHANGE FLOW</text><text x="48" y="314" fill="#74828a" font-size="12">Fictional public reconstruction</text></g>
-  <g fill="#101416" stroke="#7dcfff" stroke-width="1.5">
-    <rect x="63" y="124" width="120" height="94" rx="3"/><rect x="219" y="124" width="120" height="94" rx="3"/><rect x="375" y="124" width="120" height="94" rx="3"/><rect x="531" y="124" width="120" height="94" rx="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 360" role="img" aria-labelledby="title desc">
+  <title id="title">Documentation migration tool flow</title>
+  <desc id="desc">An approved CSV plan moves through hierarchy preview, backup, migration, and verification.</desc>
+  <rect width="840" height="360" fill="#0c1012"/>
+  <g font-family="Segoe UI, sans-serif"><text x="40" y="43" fill="#edf2f4" font-size="17" font-weight="700">Documentation migration tool</text><text x="40" y="68" fill="#74828a" font-size="13">Plan first · apply once · verify the result</text></g>
+  <g fill="#101416" stroke="#293137" stroke-width="1.5"><rect x="40" y="125" width="132" height="132" rx="3"/><rect x="205" y="125" width="132" height="132" rx="3"/><rect x="370" y="125" width="132" height="132" rx="3"/><rect x="535" y="125" width="132" height="132" rx="3"/><rect x="700" y="125" width="100" height="132" rx="3"/></g>
+  <g font-family="Segoe UI, sans-serif">
+    <g fill="#7dcfff" font-size="10" font-weight="700" letter-spacing="1"><text x="58" y="153">01 · PLAN</text><text x="223" y="153">02 · PREVIEW</text><text x="388" y="153">03 · PROTECT</text><text x="553" y="153">04 · APPLY</text><text x="718" y="153">05 · CHECK</text></g>
+    <g fill="#edf2f4" font-size="15" font-weight="700"><text x="58" y="184">CSV plan</text><text x="223" y="184">Tree + dry run</text><text x="388" y="184">Snapshot</text><text x="553" y="184">Migrate</text><text x="718" y="184">Verify</text></g>
+    <g fill="#9eabb1" font-size="11"><text x="58" y="211">approved rows</text><text x="58" y="230">structured IDs</text><text x="223" y="211">review hierarchy</text><text x="223" y="230">surface exceptions</text><text x="388" y="211">deep backup</text><text x="388" y="230">recovery path</text><text x="553" y="211">create + rename</text><text x="553" y="230">sync titles</text><text x="718" y="211">compare</text><text x="718" y="230">expected state</text></g>
   </g>
-  <g fill="#edf2f4" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700"><text x="87" y="161">Inventory</text><text x="251" y="161">Change plan</text><text x="400" y="161">Dry run</text><text x="553" y="161">Verify</text></g>
-  <g fill="#9eabb1" font-family="Segoe UI, sans-serif" font-size="12"><text x="86" y="184">Map sources</text><text x="245" y="184">Review mapping</text><text x="400" y="184">Surface exceptions</text><text x="553" y="184">Reconcile result</text></g>
-  <g stroke="#43c4ff" stroke-width="2" fill="none"><path d="M184 171H217M340 171H373M496 171H529"/><path d="M211 165L218 171L211 177M367 165L374 171L367 177M523 165L530 171L523 177"/></g>
-  <circle cx="591" cy="103" r="7" fill="#43c4ff"/><text x="605" y="108" fill="#7dcfff" font-family="Segoe UI, sans-serif" font-size="12">evidence retained</text>
+  <g fill="none" stroke="#43c4ff" stroke-width="2"><path d="M173 190H203M338 190H368M503 190H533M668 190H698"/><path d="M197 184L204 190L197 196M362 184L369 190L362 196M527 184L534 190L527 196M692 184L699 190L692 196"/></g>
+  <path d="M40 310H800" stroke="#293137"/><text x="40" y="338" fill="#74828a" font-family="Segoe UI, sans-serif" font-size="12">Idempotent migration · reviewable change set · post-change verification</text>
 </svg>

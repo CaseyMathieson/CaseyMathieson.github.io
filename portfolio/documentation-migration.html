@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A public reconstruction of an auditable documentation-migration workflow.">
+  <meta name="description" content="How Casey Mathieson built a validated, reversible documentation-migration tool.">
   <meta name="theme-color" content="#0b0e10">
-  <title>Auditable Documentation Migration | Casey Mathieson</title>
+  <title>Documentation Migration Tool | Casey Mathieson</title>
   <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
@@ -17,40 +17,36 @@
 
   <main id="content"><div class="content">
     <a class="back-link" href="index.html">All case studies</a>
-    <article class="case-layout">
+    <article class="case-layout compact-case">
       <header class="hero">
-        <p class="eyebrow">Case study 01 · Process design</p>
-        <h1>Auditable documentation migration</h1>
-        <p class="hero-copy">A controlled approach to restructuring technical knowledge while preserving traceability, reviewability, and a clear recovery path.</p>
-        <p class="notice">Representative scenario · fictional content</p>
+        <p class="eyebrow">Documentation migration · 2026</p>
+        <h1>Documentation migration tool</h1>
+        <p class="hero-copy">Built a CSV-driven command-line tool that turns an approved content plan into a validated, reversible documentation migration.</p>
       </header>
-      <aside class="case-sidebar" aria-label="Case study facts">
-        <div class="fact"><span class="fact-label">Discipline</span><span class="fact-value">Process &amp; systems engineering</span></div>
-        <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Controlled change</span></div>
-        <div class="fact"><span class="fact-label">Role</span><span class="fact-value">Workflow designer</span></div>
-      </aside>
       <div class="case-main">
-        <h2>The engineering problem</h2>
-        <p>A technical team needed to reorganize a growing knowledge base. A simple move-and-rename approach would make it difficult to prove what changed, check links, or recover cleanly if a planned structure proved wrong.</p>
-        <h2>Approach</h2>
-        <ol class="flow-list">
-          <li><strong>Map before changing.</strong> Capture the current hierarchy, source-to-destination mapping, and link dependencies in a reviewable plan.</li>
-          <li><strong>Separate planning from application.</strong> Validate the plan against the source inventory before touching the destination structure.</li>
-          <li><strong>Verify the result.</strong> Reconcile expected and actual records, surface exceptions, and retain a recovery path for the approved change set.</li>
-        </ol>
-        <figure class="case-figure"><img src="assets/documentation-migration.svg" alt="A fictional documentation migration flow: inventory, change plan, dry run, verified release."><figcaption>Illustrative workflow only. The labels and structure are fictionalized to demonstrate the controlled-change pattern.</figcaption></figure>
-        <h2>Key engineering decisions</h2>
-        <div class="decision-grid">
-          <section class="decision"><h3>Make the plan inspectable</h3><p>Reviewers can evaluate a proposed structural change before it becomes an irreversible operational problem.</p></section>
-          <section class="decision"><h3>Use evidence at each transition</h3><p>Inventory, plan, application, and verification each produce a record that supports troubleshooting and handoff.</p></section>
-          <section class="decision"><h3>Design for exceptions</h3><p>Ambiguous records and broken dependencies are routed for review rather than silently forced into the new structure.</p></section>
-          <section class="decision"><h3>Keep recovery explicit</h3><p>Controlled changes preserve enough context to correct a bad mapping without reconstructing the entire operation.</p></section>
+        <h2>Problem</h2>
+        <p>A live technical documentation space needed a major rename and hierarchy restructure. Moving pages by hand would make it difficult to review the intended structure, preserve a recovery path, or verify that the live result matched the approved plan.</p>
+
+        <h2>What I built</h2>
+        <ul class="contribution-list">
+          <li>A CSV-driven plan that derives the intended hierarchy from structured identifiers.</li>
+          <li>Dry-run mode and a local tree preview so the full change set could be reviewed before it touched the live space.</li>
+          <li>Snapshots, deep backups, page creation, title synchronization, and post-change verification.</li>
+          <li>Idempotent behavior so an interrupted or corrected migration could be rerun without duplicating work.</li>
+        </ul>
+
+        <figure class="case-figure"><img src="assets/documentation-migration.svg" alt="Documentation migration tool flow from an approved CSV plan through preview, backup, migration, and verification."></figure>
+
+        <h2>Result</h2>
+        <p>The tool was used to rename and restructure <strong>more than 100 pages</strong> in a live technical documentation space. It turned a risky manual cleanup into a controlled engineering change with a review point before application and verification afterward.</p>
+        <div class="metric-grid" aria-label="Documentation migration tool capabilities">
+          <div class="metric"><strong>100+ pages</strong><span>renamed and restructured in a live space</span></div>
+          <div class="metric"><strong>Dry run</strong><span>full plan reviewed before application</span></div>
+          <div class="metric"><strong>Idempotent</strong><span>safe to rerun after interruption or correction</span></div>
         </div>
-        <h2>Outcome</h2>
-        <p>The result is a reusable pattern for making technical-content changes safer: the work is planned, applied, and checked as an engineering workflow rather than treated as a clerical cleanup task.</p>
       </div>
     </article>
   </div></main>
-  <footer class="site-footer"><div class="site-footer-inner"><p class="footer-note">Representative public reconstruction</p><p class="footer-note">No proprietary source material shown</p></div></footer>
+  <footer class="site-footer"><div class="site-footer-inner"><p class="footer-note">Casey Mathieson · Engineering portfolio</p></div></footer>
 </body>
 </html>
