@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 390" role="img" aria-labelledby="title desc">
+  <title id="title">Calibration update workflow</title>
+  <desc id="desc">An illustrative process flow from source records through import, comparison, validation, and controlled export.</desc>
+  <rect width="840" height="390" fill="#0c1012"/>
+  <g font-family="Segoe UI, sans-serif">
+    <text x="40" y="43" fill="#edf2f4" font-size="17" font-weight="700">Calibration update — controlled workflow</text>
+    <text x="40" y="68" fill="#74828a" font-size="13">Illustrative only · product and data details removed</text>
+  </g>
+  <g fill="#101416" stroke="#293137" stroke-width="1.5">
+    <rect x="41" y="130" width="135" height="130" rx="3"/>
+    <rect x="236" y="130" width="135" height="130" rx="3"/>
+    <rect x="431" y="130" width="135" height="130" rx="3"/>
+    <rect x="626" y="130" width="174" height="130" rx="3"/>
+  </g>
+  <g font-family="Segoe UI, sans-serif">
+    <g fill="#7dcfff" font-size="11" font-weight="700" letter-spacing="1.1"><text x="60" y="159">01 · INPUT</text><text x="255" y="159">02 · PREPARE</text><text x="450" y="159">03 · VALIDATE</text><text x="645" y="159">04 · RELEASE</text></g>
+    <g fill="#edf2f4" font-size="16" font-weight="700"><text x="60" y="190">Source records</text><text x="255" y="190">Import &amp; compare</text><text x="450" y="190">Pass / fail review</text><text x="645" y="190">Controlled export</text></g>
+    <g fill="#9eabb1" font-size="12"><text x="60" y="218">legacy + current</text><text x="60" y="237">approved formats</text><text x="255" y="218">format checks</text><text x="255" y="237">before / after</text><text x="450" y="218">results summary</text><text x="450" y="237">exceptions shown</text><text x="645" y="218">only after</text><text x="645" y="237">successful review</text></g>
+  </g>
+  <g fill="none" stroke="#43c4ff" stroke-width="2"><path d="M177 195H234M372 195H429M567 195H624"/><path d="M228 189L235 195L228 201M423 189L430 195L423 201M618 189L625 195L618 201"/></g>
+  <g fill="#43c4ff"><circle cx="498" cy="291" r="5"/></g><text x="512" y="296" fill="#7dcfff" font-family="Segoe UI, sans-serif" font-size="12">validation must clear before export</text>
+  <path d="M40 326H800" stroke="#293137"/><text x="40" y="354" fill="#74828a" font-family="Segoe UI, sans-serif" font-size="12">Workflow design, validation, SOP, and field-service training</text>
+</svg>

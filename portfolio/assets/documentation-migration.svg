@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Documentation migration workflow</title>
+  <desc id="desc">A fictional four-stage flow from inventory to verified release.</desc>
+  <rect width="720" height="360" fill="#0c1012"/>
+  <g fill="none" stroke="#293137" stroke-width="1"><path d="M48 70H672M48 180H672M48 290H672"/><path d="M48 36V324M204 36V324M360 36V324M516 36V324M672 36V324"/></g>
+  <g font-family="Segoe UI, sans-serif"><text x="48" y="54" fill="#7dcfff" font-size="15" font-weight="700" letter-spacing="2">CONTROLLED CHANGE FLOW</text><text x="48" y="314" fill="#74828a" font-size="12">Fictional public reconstruction</text></g>
+  <g fill="#101416" stroke="#7dcfff" stroke-width="1.5">
+    <rect x="63" y="124" width="120" height="94" rx="3"/><rect x="219" y="124" width="120" height="94" rx="3"/><rect x="375" y="124" width="120" height="94" rx="3"/><rect x="531" y="124" width="120" height="94" rx="3"/>
+  </g>
+  <g fill="#edf2f4" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700"><text x="87" y="161">Inventory</text><text x="251" y="161">Change plan</text><text x="400" y="161">Dry run</text><text x="553" y="161">Verify</text></g>
+  <g fill="#9eabb1" font-family="Segoe UI, sans-serif" font-size="12"><text x="86" y="184">Map sources</text><text x="245" y="184">Review mapping</text><text x="400" y="184">Surface exceptions</text><text x="553" y="184">Reconcile result</text></g>
+  <g stroke="#43c4ff" stroke-width="2" fill="none"><path d="M184 171H217M340 171H373M496 171H529"/><path d="M211 165L218 171L211 177M367 165L374 171L367 177M523 165L530 171L523 177"/></g>
+  <circle cx="591" cy="103" r="7" fill="#43c4ff"/><text x="605" y="108" fill="#7dcfff" font-family="Segoe UI, sans-serif" font-size="12">evidence retained</text>
+</svg>

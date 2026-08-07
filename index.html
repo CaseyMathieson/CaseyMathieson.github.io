@@ -100,6 +100,7 @@
       border-bottom: 1px solid var(--rule);
     }
     .topbar-title { color: var(--text-secondary); font-size: .84rem; font-weight: 700; letter-spacing: .03em; }
+    .topbar-actions { display: flex; align-items: center; justify-content: flex-end; gap: .55rem; }
     .download-action {
       display: inline-flex;
       align-items: center;
@@ -170,7 +171,9 @@
       .rail-spacer { display: none; }
       .site-main { padding: .75rem .8rem 1.5rem; }
       .topbar { min-height: 3.35rem; }
-      .topbar-title { font-size: .76rem; }
+      .topbar-title { display: none; }
+      .topbar-actions { width: 100%; gap: .35rem; }
+      .topbar-actions .contact-link { min-height: 2.25rem; padding: 0 .55rem; font-size: .64rem; }
       .download-action { min-height: 2.25rem; padding: 0 .65rem; font-size: .64rem; }
       .hero { margin-top: 1.15rem; padding: 1.2rem; }
       .hub-grid { grid-template-columns: 1fr; }
@@ -205,6 +208,7 @@
       <nav class="rail-nav">
         <a class="rail-link is-active" href="#profile"><span class="rail-icon" aria-hidden="true">◈</span><span class="rail-label">Profile</span></a>
         <a class="rail-link" href="#expertise"><span class="rail-icon" aria-hidden="true">⌘</span><span class="rail-label">Expertise</span></a>
+        <a class="rail-link" href="portfolio/"><span class="rail-icon" aria-hidden="true">◇</span><span class="rail-label">Selected work</span></a>
         <a class="rail-link" href="#experience"><span class="rail-icon" aria-hidden="true">↗</span><span class="rail-label">Experience</span></a>
         <a class="rail-link" href="#education"><span class="rail-icon" aria-hidden="true">□</span><span class="rail-label">Credentials</span></a>
       </nav>
@@ -216,7 +220,10 @@
       <div class="content">
         <header class="topbar">
           <span class="topbar-title">Engineering résumé</span>
-          <a class="download-action" href="casey-mathieson-resume.pdf" download>Download résumé PDF ↓</a>
+          <div class="topbar-actions">
+            <a class="contact-link" href="portfolio/">Selected work ↗</a>
+            <a class="download-action" href="casey-mathieson-resume.pdf" download>Download résumé PDF ↓</a>
+          </div>
         </header>
 
         <section class="hero" id="profile" aria-labelledby="name">

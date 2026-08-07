@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Casey Mathieson redesigned a manual field-calibration workflow into a validated, operator-ready process.">
+  <meta name="theme-color" content="#0b0e10">
+  <title>Calibration Workflow Modernization | Casey Mathieson</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="../index.html" aria-label="Casey Mathieson résumé home"><span class="brand-mark">CM</span><span class="brand-copy"><strong>Casey Mathieson</strong><small>Engineering portfolio</small></span></a>
+    <nav class="site-nav" aria-label="Primary navigation"><a class="nav-link" href="../index.html">Résumé</a><a class="nav-link" href="index.html" aria-current="page">Selected work</a></nav>
+  </div></header>
+
+  <main id="content"><div class="content">
+    <a class="back-link" href="index.html">All case studies</a>
+    <article class="case-layout">
+      <header class="hero">
+        <p class="eyebrow">Calibration process modernization · 2024–2025</p>
+        <h1>Calibration workflow modernization</h1>
+        <p class="hero-copy">Replaced manual transcription and scattered checks with a repeatable import, validation, comparison, and controlled-export workflow for field calibration updates.</p>
+      </header>
+      <aside class="case-sidebar" aria-label="Project facts">
+        <div class="fact"><span class="fact-label">My role</span><span class="fact-value">Systems engineer &amp; workflow designer</span></div>
+        <div class="fact"><span class="fact-label">Scope</span><span class="fact-value">Worksheet, validation flow, SOP, and training</span></div>
+        <div class="fact"><span class="fact-label">Work period</span><span class="fact-value">Oct 2024–Sep 2025</span></div>
+      </aside>
+      <div class="case-main">
+        <h2>The starting point</h2>
+        <p>Field calibration updates arrived in more than one legacy and current format. The existing process required people to manually enter values, perform scattered checks, and prepare an output for use. A full run typically took about <strong>14 elapsed hours with two people</strong>, and field teams still needed remote assistance when the process encountered an unfamiliar condition.</p>
+
+        <h2>What I changed</h2>
+        <ul class="contribution-list">
+          <li>Built and iterated a worksheet-backed workflow that imported and formatted calibration records instead of relying on manual re-entry.</li>
+          <li>Added format-aware import, comparison, before/after validation, consolidated pass/fail results, and operator-facing error messages.</li>
+          <li>Separated data preparation, validation, and controlled export so an output was released only after the validation path was complete.</li>
+          <li>Created the operating procedure and trained two field-service engineers; one later completed the end-to-end process independently with only minor clarification.</li>
+        </ul>
+
+        <figure class="case-figure"><img src="assets/calibration-validation.svg" alt="A compact calibration-update workflow showing source files flowing through import, normalization, comparison, validation, and controlled export."><figcaption>Public reconstruction of the workflow shape. Product names, file layouts, acceptance criteria, and implementation details are intentionally omitted.</figcaption></figure>
+
+        <h2>Documented result</h2>
+        <p>The primary value was not automation for its own sake. It was a faster, more repeatable calibration update that preserved validation before release and made the process practical for trained field users.</p>
+        <div class="metric-grid" aria-label="Calibration workflow results">
+          <div class="metric"><strong>~14 hrs</strong><span>previous elapsed duration, with two people</span></div>
+          <div class="metric"><strong>2–3 hrs</strong><span>updated elapsed duration, with one person</span></div>
+          <div class="metric"><strong>2 engineers</strong><span>trained on the documented workflow</span></div>
+        </div>
+        <p class="project-note"><strong>Context for the figures:</strong> duration is an implementation estimate, not a labor-hours-saved claim. This page presents the process outcome without exposing calibration data, machine details, or customer information.</p>
+
+        <h2>How the design reduced risk</h2>
+        <div class="decision-grid">
+          <section class="decision"><h3>Validation precedes release</h3><p>Importing a record did not make it ready for use. The workflow required comparison and a clear pass/fail decision before controlled export.</p></section>
+          <section class="decision"><h3>Exceptions stay visible</h3><p>Operator-facing messages made missing or incompatible inputs a specific correction task instead of a silent downstream failure.</p></section>
+          <section class="decision"><h3>The procedure travels with the tool</h3><p>The SOP and training turned a personal workflow into a repeatable process another engineer could perform and support.</p></section>
+          <section class="decision"><h3>Field use was a design input</h3><p>Supporting legacy and current inputs reduced unnecessary remote intervention during real operating conditions.</p></section>
+        </div>
+      </div>
+    </article>
+  </div></main>
+  <footer class="site-footer"><div class="site-footer-inner"><p class="footer-note">Casey Mathieson · Engineering portfolio</p><p class="footer-note">Public reconstruction · proprietary details removed</p></div></footer>
+</body>
+</html>

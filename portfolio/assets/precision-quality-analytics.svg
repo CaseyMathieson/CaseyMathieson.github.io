@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Precision-stage quality analytics</title>
+  <desc id="desc">A fictional motion trace is interpreted in a quality-decision panel.</desc>
+  <rect width="720" height="360" fill="#0c1012"/>
+  <text x="48" y="54" fill="#7dcfff" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" letter-spacing="2">SYNTHETIC TRACE REVIEW</text>
+  <g fill="none" stroke="#293137" stroke-width="1"><path d="M55 95H452M55 135H452M55 175H452M55 215H452M55 255H452"/><path d="M55 95V255M121 95V255M187 95V255M253 95V255M319 95V255M385 95V255M452 95V255"/></g>
+  <path d="M55 214 C86 212 98 187 121 190 S159 149 187 152 S226 175 253 154 S286 118 319 125 S350 144 385 120 S423 110 452 106" fill="none" stroke="#7dcfff" stroke-width="3"/>
+  <path d="M55 220 C85 216 99 199 121 202 S160 155 187 158 S223 184 253 161 S286 138 319 135 S348 173 385 126 S422 118 452 112" fill="none" stroke="#87949b" stroke-width="2" stroke-dasharray="5 6"/>
+  <circle cx="351" cy="169" r="8" fill="#0c1012" stroke="#43c4ff" stroke-width="3"/><path d="M357 163L487 105" stroke="#43c4ff" stroke-width="1.5"/>
+  <g fill="#101416" stroke="#7dcfff" stroke-width="1.5"><rect x="491" y="92" width="180" height="178" rx="3"/></g>
+  <g font-family="Segoe UI, sans-serif"><text x="514" y="124" fill="#7dcfff" font-size="12" font-weight="700" letter-spacing="1.5">QUALITY DECISION</text><text x="514" y="161" fill="#edf2f4" font-size="23" font-weight="700">REVIEW</text><path d="M514 184H648" stroke="#293137"/><text x="514" y="211" fill="#9eabb1" font-size="13">Reference aligned</text><text x="514" y="236" fill="#9eabb1" font-size="13">Exception isolated</text><text x="514" y="290" fill="#74828a" font-size="12">Fictional data</text></g>
+  <g font-family="Segoe UI, sans-serif" font-size="12"><text x="55" y="286" fill="#7dcfff">reference</text><text x="134" y="286" fill="#87949b">measured response</text></g>
+</svg>
