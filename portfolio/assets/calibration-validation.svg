@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 390" role="img" aria-labelledby="title desc">
   <title id="title">Calibration update workflow</title>
-  <desc id="desc">An illustrative process flow from source records through import, comparison, validation, and controlled export.</desc>
+  <desc id="desc">A process flow from source records through import, comparison, validation, and controlled export.</desc>
   <rect width="840" height="390" fill="#0c1012"/>
   <g font-family="Segoe UI, sans-serif">
     <text x="40" y="43" fill="#edf2f4" font-size="17" font-weight="700">Calibration update — controlled workflow</text>
-    <text x="40" y="68" fill="#74828a" font-size="13">Illustrative only · product and data details removed</text>
   </g>
   <g fill="#101416" stroke="#293137" stroke-width="1.5">
     <rect x="41" y="130" width="135" height="130" rx="3"/>

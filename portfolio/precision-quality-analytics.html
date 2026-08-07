@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A public reconstruction of a precision-stage quality-analytics workflow.">
+  <meta name="description" content="How Casey Mathieson rebuilt a precision-stage runout and wobble qualification process.">
   <meta name="theme-color" content="#0b0e10">
-  <title>Precision-Stage Quality Analytics | Casey Mathieson</title>
+  <title>Stage Qualification | Casey Mathieson</title>
   <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
@@ -17,40 +17,36 @@
 
   <main id="content"><div class="content">
     <a class="back-link" href="index.html">All case studies</a>
-    <article class="case-layout">
+    <article class="case-layout compact-case">
       <header class="hero">
-        <p class="eyebrow">Case study 02 · Test method</p>
-        <h1>Precision-stage quality analytics</h1>
-        <p class="hero-copy">A repeatable method for converting motion and test signals into a clear, reviewable quality decision.</p>
-        <p class="notice">Representative scenario · synthetic signals</p>
+        <p class="eyebrow">Quality test-method redevelopment</p>
+        <h1>Stage runout &amp; wobble qualification</h1>
+        <p class="hero-copy">Revived a legacy stage-quality process, moved it to current controls, and automated the signal checks needed for a repeatable result.</p>
       </header>
-      <aside class="case-sidebar" aria-label="Case study facts">
-        <div class="fact"><span class="fact-label">Discipline</span><span class="fact-value">Metrology &amp; test methods</span></div>
-        <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Signal interpretation</span></div>
-        <div class="fact"><span class="fact-label">Role</span><span class="fact-value">Systems &amp; validation engineer</span></div>
-      </aside>
       <div class="case-main">
-        <h2>The engineering problem</h2>
-        <p>A precision motion system can generate a large amount of diagnostic information while still leaving the acceptance decision unclear. A useful test method must distinguish normal variation from a meaningful exception and make that distinction easy for another engineer to review.</p>
-        <h2>Approach</h2>
-        <ol class="flow-list">
-          <li><strong>Start with aligned signals.</strong> Bring the reference command, measured motion, and relevant environmental context into one comparable view.</li>
-          <li><strong>Define the decision path.</strong> Separate trends, transients, and repeatability checks so that one noisy feature does not obscure the actual question.</li>
-          <li><strong>Present exceptions for investigation.</strong> Pair a concise quality decision with the trace and context needed for root-cause follow-up.</li>
-        </ol>
-        <figure class="case-figure"><img src="assets/precision-quality-analytics.svg" alt="A fictional precision-stage trace feeds a quality-decision panel with a highlighted exception."><figcaption>Synthetic traces illustrate the pattern: compare aligned signals, isolate an exception, and retain the context needed to investigate it.</figcaption></figure>
-        <h2>Key engineering decisions</h2>
-        <div class="decision-grid">
-          <section class="decision"><h3>Keep reference and response distinct</h3><p>Separating what the system was asked to do from what it measured makes drift and lag easier to reason about.</p></section>
-          <section class="decision"><h3>Preserve the raw path to the decision</h3><p>A pass/fail indicator is more useful when another engineer can inspect the evidence behind it.</p></section>
-          <section class="decision"><h3>Use repeatability deliberately</h3><p>Single runs are treated as observations; repeated checks expose variation that a one-off result could hide.</p></section>
-          <section class="decision"><h3>Route exceptions, do not bury them</h3><p>Clear exception cues speed triage without pretending that a diagnostic chart is a root cause by itself.</p></section>
-        </div>
-        <h2>Outcome</h2>
-        <p>The workflow creates a shared language between test, manufacturing, and support teams: a signal becomes an inspectable decision, then a focused starting point for corrective action.</p>
+        <h2>Problem</h2>
+        <p>The prior process had drifted across legacy controls, newer hardware, and conflicting work instructions. It could not consistently separate actual stage behavior from measurement artifacts caused by data alignment, filtering, reference points, velocity jitter, electrical noise, or probe saturation.</p>
+
+        <h2>What I built</h2>
+        <ul class="contribution-list">
+          <li>Rebuilt the motion and data-acquisition portion of the test process on a current control system, then checked its correlation with the earlier method.</li>
+          <li>Added data-quality checks during acquisition, including probe-saturation review and trigger-based signal slicing.</li>
+          <li>Created repeatable noise/runout analysis for time alignment, frequency decomposition, radial analysis, interpolation, plotting, and result storage.</li>
+          <li>Updated the test and data-processing procedures so the same analysis path could be repeated and reviewed.</li>
+        </ul>
+
+        <figure class="case-figure"><img src="assets/precision-quality-analytics.svg" alt="A stage-quality test flow from acquiring motion and probe signals through data checks, analysis, and recorded review."></figure>
+
+        <h2>Result</h2>
+        <p>The rebuilt method correlated with the earlier process and produced a reviewable result instead of a chart that depended on one engineer's interpretation. Just as importantly, the investigation exposed the conditions that were degrading measurement repeatability.</p>
+        <ul class="contribution-list">
+          <li><strong>Signal handling:</strong> time alignment and filtering could change the apparent result.</li>
+          <li><strong>Motion context:</strong> datum/reference handling and velocity jitter needed to be controlled.</li>
+          <li><strong>Measurement quality:</strong> electrical noise, probe saturation, and inconsistent procedures could obscure actual stage behavior.</li>
+        </ul>
       </div>
     </article>
   </div></main>
-  <footer class="site-footer"><div class="site-footer-inner"><p class="footer-note">Representative public reconstruction</p><p class="footer-note">No proprietary test data shown</p></div></footer>
+  <footer class="site-footer"><div class="site-footer-inner"><p class="footer-note">Casey Mathieson · Engineering portfolio</p></div></footer>
 </body>
 </html>

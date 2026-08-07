@@ -153,6 +153,8 @@ h3 { margin: .55rem 0 0; font-size: 1.2rem; line-height: 1.2; }
   align-items: start;
 }
 .case-layout .hero { grid-area: hero; }
+.case-layout.compact-case { grid-template-areas: "hero" "main"; grid-template-columns: minmax(0, 1fr); }
+.compact-case .hero, .compact-case .case-main { max-width: 48rem; }
 .case-main { grid-area: main; min-width: 0; }
 .case-sidebar { grid-area: sidebar; }
 .case-main h2 { margin-top: 2.8rem; padding-bottom: .45rem; border-bottom: 1px solid var(--border); }
