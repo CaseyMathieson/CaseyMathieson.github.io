@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Casey Mathieson</title>
+  <rect width="64" height="64" rx="10" fill="#0e1113"/>
+  <g fill="none" stroke="#7dcfff" stroke-width="4" stroke-linecap="square">
+    <path d="M27 7H7v20M37 7h20v20M57 37v20H37M27 57H7V37"/>
+  </g>
+  <rect x="13" y="13" width="38" height="38" rx="5" fill="#121619"/>
+  <g fill="#edf2f4" transform="translate(14 41) scale(.02723147 -.028)">
+    <path d="M507 87 420 0H173L87 87V604L173 691H420L507 604V532L408 432V604H186V87H408V160L507 259Z"/>
+    <path d="M667 1H568V542L630 603H549L416 346H344L216 603H136L198 542V1H99V691H276L379 464H391L496 691H667Z" transform="translate(556)"/>
+  </g>
+</svg>
