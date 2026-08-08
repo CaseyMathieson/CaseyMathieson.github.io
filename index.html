@@ -60,15 +60,10 @@
       color: var(--text-secondary);
     }
     .brand-mark {
-      display: inline-grid;
+      display: block;
+      flex: 0 0 auto;
       width: 2.35rem;
       height: 2.35rem;
-      place-items: center;
-      border: 1px solid var(--rule);
-      color: var(--accent-cyan);
-      font-size: .76rem;
-      font-weight: 800;
-      letter-spacing: .05em;
     }
     .rail-brand strong, .rail-brand small { display: block; }
     .rail-brand strong { color: var(--text-primary); font-size: .68rem; letter-spacing: .05em; }
@@ -203,7 +198,7 @@
   <div class="resume-shell">
     <aside class="resume-rail" aria-label="Résumé navigation">
       <a class="rail-brand" href="#profile" aria-label="Back to profile">
-        <span class="brand-mark">CM</span>
+        <img class="brand-mark" src="/favicon.svg" alt="" width="38" height="38">
         <span><strong>Casey Mathieson</strong><small>Engineering résumé</small></span>
       </a>
       <nav class="rail-nav">
