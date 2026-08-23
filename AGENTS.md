@@ -11,6 +11,15 @@ This repository is a static professional resume and portfolio site. Keep changes
 - `portfolio/`: portfolio index, individual case studies, shared `portfolio.css`, and SVG artwork in `portfolio/assets/`.
 - `README.md`: brief public project description.
 
+## Career, Résumé, and Application Context
+
+- Before evaluating a job or internal role, drafting or tailoring a résumé or cover letter, preparing for an interview or manager/recruiter conversation, or advising on career positioning, read `C:\Users\Casey\CloudStorage\Finance\Employment\Canonical\Career Master.md` completely. Treat it as the canonical factual source for Casey's experience and accomplishments.
+- Read `C:\Users\Casey\CloudStorage\Finance\Employment\Canonical\Job Search Research Tracker.md` when application history, role status, compensation, commute, travel, preferences, or next-step context matters.
+- Read `C:\Users\Casey\CloudStorage\Finance\Employment\Canonical\Source Manifest.md` when reconciling conflicting claims, dates, titles, or résumé artifacts.
+- Use only claims recorded in `Career Master.md` or directly confirmed by Casey. Add newly confirmed facts to the career master before reusing them.
+- Store role-specific materials under `C:\Users\Casey\CloudStorage\Finance\Employment\Current\Applications\`. Never overwrite previously submitted materials, and keep private employment records out of Git.
+- For tailored résumé PDFs, validate page count, HTML/PDF text parity, text bounds, and rendered pages.
+
 ## Build, Test, and Development Commands
 
 Serve the repository locally with Python:
