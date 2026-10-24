@@ -17,6 +17,7 @@ This repository is a static professional resume and portfolio site. Keep changes
 - Read `C:\Users\Casey\CloudStorage\Finance\Employment\Canonical\Job Search Research Tracker.md` when application history, role status, compensation, commute, travel, preferences, or next-step context matters.
 - Read `C:\Users\Casey\CloudStorage\Finance\Employment\Canonical\Source Manifest.md` when reconciling conflicting claims, dates, titles, or résumé artifacts.
 - Use only claims recorded in `Career Master.md` or directly confirmed by Casey. Add newly confirmed facts to the career master before reusing them.
+- Exclude the Evergreen Advancements section from résumés by default. Include it only when its experience is specifically relevant to the target job description.
 - Store role-specific materials under `C:\Users\Casey\CloudStorage\Finance\Employment\Current\Applications\`. Never overwrite previously submitted materials, and keep private employment records out of Git.
 - For tailored résumé PDFs, validate page count, HTML/PDF text parity, text bounds, and rendered pages.
 
